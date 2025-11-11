@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/25" fx:controller="controller.HomeContactController">
+   <children>
+      <Label alignment="CENTER" layoutX="12.0" layoutY="14.0" prefHeight="18.0" prefWidth="572.0" text="MENEJEMEN KONTAK">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfNama" layoutX="69.0" layoutY="46.0" prefHeight="26.0" prefWidth="177.0" />
+      <TextField fx:id="tfEmail" layoutX="68.0" layoutY="80.0" prefHeight="26.0" prefWidth="178.0" />
+      <TextField fx:id="tfNomorTelepon" layoutX="388.0" layoutY="46.0" prefHeight="26.0" prefWidth="178.0" />
+      <TextField fx:id="tfAlamat" layoutX="388.0" layoutY="80.0" prefHeight="26.0" prefWidth="178.0" />
+      <Text layoutX="21.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nama:" wrappingWidth="65.9234619140625" />
+      <Text layoutX="21.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:" wrappingWidth="65.9234619140625" />
+      <Text layoutX="288.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nomor Telepon:" wrappingWidth="103.52349853515625" />
+      <Text layoutX="288.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Alamat:" wrappingWidth="103.52349853515625" />
+      <Button fx:id="btnTambah" layoutX="483.0" layoutY="121.0" mnemonicParsing="false" onAction="#TambahKontak" prefHeight="26.0" prefWidth="72.0" text="Tambah" />
+      <TableView fx:id="tvTambah" layoutX="14.0" layoutY="160.0" prefHeight="170.0" prefWidth="572.0">
+        <columns>
+          <TableColumn fx:id="tcNama" prefWidth="121.60003662109375" text="Nama" />
+          <TableColumn fx:id="tcEmail" prefWidth="142.4000244140625" text="Email" />
+            <TableColumn fx:id="tcNomorTelepon" prefWidth="135.199951171875" text="Nomor Telepon" />
+            <TableColumn fx:id="tcAlamat" prefWidth="173.5999755859375" text="Alamat" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnEdit" layoutX="210.0" layoutY="347.0" mnemonicParsing="false" onAction="#EditKontak" prefHeight="26.0" prefWidth="72.0" text="Edit" />
+      <Button fx:id="btnHapus" layoutX="356.0" layoutY="347.0" mnemonicParsing="false" onAction="#HapusKontak" prefHeight="26.0" prefWidth="72.0" text="Hapus" />
+   </children>
+</AnchorPane>
